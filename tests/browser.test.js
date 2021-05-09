@@ -32,3 +32,15 @@ describe('Clicking "Pusha till stacken"', () => {
 		await alert.accept();
 	});
 });
+
+describe('Klickar "Poppa stacken"', () => {
+	it('ska öpnna en alertbox', async () => {
+		let pop = await driver.findElement(By.id('pop'));
+		await pop.click();
+		let close = driver.switchTo().alert();
+		close.dismiss();
+		
+
+		
+	});
+});
